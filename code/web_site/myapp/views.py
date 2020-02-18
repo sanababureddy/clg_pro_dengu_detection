@@ -1,3 +1,4 @@
+#python manage.py runserver
 import subprocess
 from django.shortcuts import render
 from django.http import HttpResponse
