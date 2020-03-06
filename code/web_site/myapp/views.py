@@ -43,5 +43,5 @@ def result(request):
     return render(request, 'result.html',{'result':prediction_result})
 
 def script_function(values):
-  return subprocess.run(['python', 'C:/Users/tejak/Desktop/Project@ML/github/code/predict.py', values],stdout=subprocess.PIPE)
-  #return subprocess.run(['python', 'C:/Users/sanab/Documents/clg_pro_dengu_detection/code/predict.py', values],stdout=subprocess.PIPE)  
+  #return subprocess.run(['python', 'C:/Users/tejak/Desktop/Project@ML/github/code/predict.py', values],stdout=subprocess.PIPE)
+  return subprocess.run(['python', 'C:/Users/sanab/Documents/clg_pro_dengu_detection/code/predict.py', values],stdout=subprocess.PIPE)  

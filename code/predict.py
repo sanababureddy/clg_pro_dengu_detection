@@ -3,8 +3,8 @@ import sys
 #ignoring feature warnings
 import warnings
 warnings.filterwarnings('ignore')
-data=pd.read_csv("C:/Users/tejak/Desktop/Project@ML/github/code/dataset.csv")
-#data=pd.read_csv("C:/Users/sanab/Documents/clg_pro_dengu_detection/code/dataset.csv")
+#data=pd.read_csv("C:/Users/tejak/Desktop/Project@ML/github/code/dataset.csv")
+data=pd.read_csv("C:/Users/sanab/Documents/clg_pro_dengu_detection/code/dataset.csv")
 data.drop(columns={'id'},inplace=True) #Deleting id
 get={'no':0,'yes':1,'low':2,'medium':3,'high':4} 
 data.vomiting=data.vomiting.map(get)
