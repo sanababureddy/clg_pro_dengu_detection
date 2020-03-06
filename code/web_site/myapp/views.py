@@ -9,7 +9,7 @@ def home(request):
 def check(request):
     return render(request,'check.html')
 
-def predict(request):
+def result(request):
     fever = request.GET["fever"]
     vomiting = request.GET["vomiting"]
     nausea = request.GET["nausea"]
@@ -39,11 +39,9 @@ def predict(request):
         prediction_result = '<h1 style="text-align: center; color: green;">Patient does not have Dengue</h1>'
     else:
         prediction_result = "Unknown"
-    return HttpResponse(prediction_result)
+    #return HttpResponse(prediction_result)
+    return render(request, 'result.html',{'result':prediction_result})
 
 def script_function(values):
-  return subprocess.run(['python', 'C:/Users/tejak/Desktop/Project@ML/github/code/predict.py', values],stdout=subprocess.PIPE)  
-  
-  
-def about(request):
-    return render(request,'about.html')
+  return subprocess.run(['python', 'C:/Users/tejak/Desktop/Project@ML/github/code/predict.py', values],stdout=subprocess.PIPE)
+  #return subprocess.run(['python', 'C:/Users/sanab/Documents/clg_pro_dengu_detection/code/predict.py', values],stdout=subprocess.PIPE)  

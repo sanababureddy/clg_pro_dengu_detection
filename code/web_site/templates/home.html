@@ -1,24 +1,50 @@
 {% extends 'base.html' %}
 {% block content %}
+{% load static %}
 
 <!-- Full Page Image Header with Vertically Centered Content -->
 <header class="masthead">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12 text-center">
-          <h1 class="font-weight-light">Vertically Centered Masthead Content</h1>
-          <p class="lead">A great starter layout for a landing page</p>
+          <h1 class="font-weight-normal">Online Dengue Disease Detection System</h1>
+          <p class="lead">Interactive web application to check dengue disease with patient symptoms.</p>
+          <a href="check" class="btn btn-primary">Check Disease Status</a>
         </div>
       </div>
     </div>
-  </header>
+</header>
   
-  <!-- Page Content -->
-  <section class="py-5">
+<!-- Page Content -->
+<section class="py-5">
     <div class="container">
-      <h2 class="font-weight-light">Page Content</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ab nulla dolorum autem nisi officiis blanditiis voluptatem hic, assumenda aspernatur facere ipsam nemo ratione cumque magnam enim fugiat reprehenderit expedita.</p>
+      <h2 class="font-weight-light">Prediction Process</h2><br><br><br>
+      <div class="text-center">
+        <div class="row">
+            <div class="col-lg-3" id="orderlist">
+                <img src="{% static 'images/input.png' %}" class="img-circle"  width="100" height="100" style="margin: 0px 30px;"> <br>
+                <h5>Enter patient symptoms</h5>  
+            </div>
+            <div class="col-lg-2">
+                <span style="font-size:100px;" id="arrow">&#8594;</span>
+            </div>
+            <div class="col-lg-3" id="callus">
+                <img src="{% static 'images/algorithm.png' %}" class="img-circle" width="100" height="100" style="margin: 0px 30px;"><br>
+                    <h5>Date processed with ML algorithms</h5>
+            </div>
+            <div class="col-lg-1">
+                <span style='font-size:100px;' id="arrow">&#8594;</span>
+            </div>
+            <div class="col-lg-3" id="payondelivery">
+                <img src="{% static 'images/output.png' %}" class="img-circle"  width="100" height="100" style="margin: 0px 30px;"><br><br>
+                <h5>Disease status will be displayed</h5><br>
+            </div>
+        </div>
     </div>
-  </section>
+    </div>
+</section>
 
+<div class="container text-center">
+    <a href="check" class="btn btn-primary ">Check Status Now</a>
+</div>
 {% endblock %}

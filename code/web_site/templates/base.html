@@ -17,7 +17,7 @@
     .masthead {
       height: 100vh;
       min-height: 500px;
-      background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+      background-image: url("{% static 'images/back.jpg' %}");
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -40,10 +40,7 @@
           <a class="nav-link" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="check">Check</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about">About</a>
+          <a class="nav-link" href="check">Check Status</a>
         </li>
       </ul>
     </div>
@@ -52,10 +49,17 @@
     {% block content %}
 
     {% endblock %}
-
+    <br><br><br>
+    <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <h5>Quick Links</h5>
+            <a class="text-decoration-none" href="/">Home</a>&nbsp;&nbsp;
+            <a class="text-decoration-none" href="check">Check Status</a>&nbsp;&nbsp;
+        </div>
+      </footer>
   <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.slim.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="{% static 'vendor/jquery/jquery.slim.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
 
 </body>
 
