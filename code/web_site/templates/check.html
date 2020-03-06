@@ -1,0 +1,159 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h2 style="text-align: center;">Dengue Disease Detection</h2>
+<table align="center">
+<form action="predict">
+    <tr>
+        <td><label>Fever</label></td>
+        <td><input type="number" name="fever"></td>
+    </tr>
+    <tr>
+        <td><label>Vomiting</label></td>
+        <td>
+            <select name="vomiting">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Nausea</label></td>
+        <td>
+            <select name="nausea">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Vomiting Blood</label></td>
+        <td>
+            <select name="vomiting_blood">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Body Pains</label></td>
+        <td>
+            <select name="body_pains">
+                <option value="2">Low</option>
+                <option value="3">Medium</option>
+                <option value="4">High</option>
+                <option value="0">No</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Pain behind eyes</label></td>
+        <td>
+            <select name="pain_behind_eyes">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Joint pains</label></td>
+        <td>
+            <select name="joint_pains">
+                <option value="2">Low</option>
+                <option value="3">Medium</option>
+                <option value="4">High</option>
+                <option value="0">No</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Chill</label></td>
+        <td>
+            <select name="chill">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Headache</label></td>
+        <td>
+            <select name="headache">
+                <option value="2">Low</option>
+                <option value="3">Medium</option>
+                <option value="4">High</option>
+                <option value="0">No</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Swollen glands</label></td>
+        <td>
+            <select name="swollen_glands">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Rashes</label></td>
+        <td>
+            <select name="rashes">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Abdominal pain</label></td>
+        <td>
+            <select name="abdominal_pain">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Bleeading nose</label></td>
+        <td>
+            <select name="ble_nose">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Bleeading mouth</label></td>
+        <td>
+            <select name="ble_mouth">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Fatigue</label></td>
+        <td>
+            <select name="fatigue">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Red eyes</label></td>
+        <td>
+            <select name="red_eyes">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td><label>Platelets count</label></td>
+        <td><input type="number" name="platelets_count"></td>
+    </tr>
+    <tr><td><input type="submit"></td></tr>
+</form>
+</table>
+{% endblock %}

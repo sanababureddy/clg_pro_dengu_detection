@@ -6,7 +6,8 @@ from django.http import HttpResponse
 # Create your views here.
 def home(request):
     return render(request,'home.html')
-
+def check(request):
+    return render(request,'check.html')
 
 def predict(request):
     fever = request.GET["fever"]
@@ -42,3 +43,7 @@ def predict(request):
 
 def script_function(values):
   return subprocess.run(['python', 'C:/Users/tejak/Desktop/Project@ML/github/code/predict.py', values],stdout=subprocess.PIPE)  
+  
+  
+def about(request):
+    return render(request,'about.html')
