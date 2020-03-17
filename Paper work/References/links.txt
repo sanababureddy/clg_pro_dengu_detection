@@ -1,0 +1,8 @@
+https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0189988
+https://www.hindawi.com/journals/bmri/2013/690835/
+https://ieeexplore.ieee.org/document/6361016
+
+https://ij-healthgeographics.biomedcentral.com/articles/10.1186/1476-072X-14-9
+https://www.semanticscholar.org/paper/Performance-Comparison-of-Na%C3%AFve-Bayes-and-J-48-Goyal-Mehta/b4eb0794605bea6bb8e0d333a3c1bcfc55616e17
+https://www.researchgate.net/publication/2433350_Image_Analysis_and_Supervised_Learning_in_the_Automated_Differentiation_of_White_Blood_Cells_from_Microscopic_Images
+https://www.ijert.org/image-processing-based-leukemia-cancer-cell-detection
